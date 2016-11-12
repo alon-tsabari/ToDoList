@@ -6,12 +6,15 @@ var app = angular.module('toDoList', [])
 		this.todos.push({});
 	}
 
-	$scope.todos = dataService.getTodos();
+	dataService.getTodos(function(response) {
+		console.log(response.data);
+		return response.data;
+	});
 })
 
 .service('dataService', function($http) {
-	this.getTodos = $http.get('js/data.json').then(function(response) {
-		console.log(response.data);
-		return response.data;
-	})
-})
+	
+	this.getTodos = fucntion(callback) {
+		$http.get('js/data.json').then(callback);
+	};
+});
