@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>To Do List || Alon Tsabari</title>
-		<link rel="stylesheet" type="text/css" href="css/style2.css">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body ng-app="toDoList">
@@ -13,7 +14,7 @@
 				
 				<ul class="first">
 					<li>
-						<button ng-click="addTask()">Add a new Task +</button>
+						<button ng-click="addTask()">Add a new Task +</button><input type="text" placeholder = "Add a new Task" ng-model="todo.name">
 					</li>
 				</ul>
 
@@ -24,9 +25,9 @@
 						<input ng-show="editing" ng-model="todo.name" ng-blur="editing = false;" type="text">
 						
 						<div class="actions">
-							<button class="edit" ng-click="editing = true;">Edit</button>
-							<button class="save" ng-click="saveTodo(todo)">Save</button>
-							<button class="delete" ng-click="deleteTodo(todo,$index)">Delete</button>
+							<button class="button edit" ng-click="editing = true;">Edit</button>
+							<button class="button save" ng-click="saveTodo(todo)">Save</button>
+							<button class="button delete" ng-click="deleteTodo(todo,$index)">Delete</button>
 						</div>
 					</li>
 				</ul>
@@ -36,6 +37,6 @@
 
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
 	</body>
 </html>
