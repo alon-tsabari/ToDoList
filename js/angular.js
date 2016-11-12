@@ -31,7 +31,7 @@ angular.module('toDoList', [])
 .service('dataService', function($http) {
 	
   this.getTodos = function(callback) {
-    $http.get('vendor/data.json').then(callback);
+    $http.get('js/data.json').then(callback);
   };
   
   this.deleteTodo = function(todo) {
