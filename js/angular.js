@@ -3,7 +3,7 @@ var app = angular.module('toDoList', [])
 .controller('mainCtrl', function($scope, dataService) {
 
 	$scope.addTask = function() {
-		this.todos.push({});
+		this.todos.push({"name": "Edit!"});
 	}
 
 	dataService.getTodos(function(response) {
