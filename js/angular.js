@@ -12,10 +12,12 @@ var app = angular.module('toDoList', [])
 	});
 	
 	$scope.deleteTodo = function(todo, index) {
+		dataService.deleteTodo();
 		this.todos.splice(index, 1);
 	}
 	
 	$scope.saveTodo = function(todo) {
+		dataService.saveTodo();
 	}
 })
 
@@ -25,5 +27,12 @@ var app = angular.module('toDoList', [])
 		$http.get('js/data.json').then(callback);
 	};
 	
+	this.deleteTodo = function(todo) {
+		console.log('The ToDo ' + todo.name + ' has been deleted successfully!');
+	}
+			    
+	this.saveTodo = function(todo) {
+		console.log('The ToDo ' + todo.name + ' has been saved successfully!');
+	}
 	
 });
