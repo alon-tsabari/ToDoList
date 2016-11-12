@@ -195,6 +195,11 @@ label, .first button {
 	.actions > .delete:hover {
 		color: rgb(242, 136, 136);
 	}
+	
+	.first button:hover {
+		color: rgb(101, 161, 204);
+		outline: none;
+	}
 }
 
 
