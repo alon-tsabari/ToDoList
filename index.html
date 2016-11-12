@@ -19,15 +19,15 @@
 				</ul>
 
 				<ul>
-					<li ng-repeat="todo in todos" ng-class="{'none': deleted}">
-						<input type="checkbox" ng-click="done = !done" >
+					<li ng-repeat="todo in todos">
+						<input ng-click="done = !done" type="checkbox">
 						<label ng-hide="editing" ng-class="{'done': done}">{{todo.name}}</label>
-						<input type="text" ng-show="editing" ng-model="todo.name" ng-blur="editing = false;">
+						<input ng-show="editing" ng-model="todo.name" ng-blur="editing = false;" type="text">
 						
 						<div class="actions">
 							<button class="edit" ng-click="editing = true;">Edit</button>
-							<button class="save" ng-click="editing = false;">Save</button>
-							<button class="delete" ng-click="deleted = true;">Delete</button>
+							<button class="save" ng-click="saveTodo(todo)">Save</button>
+							<button class="delete" ng-click="deleteTodo(todo,$index)">Delete</button>
 						</div>
 					</li>
 				</ul>
