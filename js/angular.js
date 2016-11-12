@@ -6,12 +6,11 @@ angular.module('toDoList', [])
 	var input = document.querySelector('[type="text"]');
 	if(input.value === '') {
 	  $scope.todos.unshift({"name": "New Task"});
-	  console.log(this);
 	}else {
 	  $scope.todos.unshift({"name": $scope.todo.name});
 	}
 	input.value = '';
-	this.todo.name = '';
+	$scope.todo.name = '';
 	}
   
   dataService.getTodos(function(response) {
