@@ -199,6 +199,10 @@ label, .first button {
 		color: rgb(242, 136, 136);
 	}
 	
+	.first button:focus {
+		outline: none;
+	}
+	
 }
 
 
