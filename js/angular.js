@@ -8,7 +8,7 @@ angular.module('toDoList', [])
 	  $scope.todos.unshift({"name": "New Task"});
 	  console.log(this);
 	}else {
-	  $scope.todos.push({"name": $scope.todo.name});
+	  $scope.todos.unshift({"name": $scope.todo.name});
 	}
 	input.value = '';
 	this.todo.name = '';
