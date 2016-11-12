@@ -12,12 +12,12 @@ var app = angular.module('toDoList', [])
 	});
 	
 	$scope.deleteTodo = function(todo, index) {
-		dataService.deleteTodo();
+		dataService.deleteTodo(todo);
 		this.todos.splice(index, 1);
 	}
 	
 	$scope.saveTodo = function(todo) {
-		dataService.saveTodo();
+		dataService.saveTodo(todo);
 	}
 })
 
