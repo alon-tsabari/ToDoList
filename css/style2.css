@@ -1,10 +1,10 @@
-/**********
-	GENERAL
-  ***********/
+   /**********
+       GENERAL
+     ***********/
 
-  /***************
+      /***************
 	MOBILE - MODE
-  *****************/
+      *****************/
 
 * {
 	margin: 0;
@@ -92,28 +92,30 @@ label, .first button {
 
 
 /******************
-	PSUEDO-CLASSES
+    PSUEDO-CLASSES
   ********************/
 
 	
-.actions > button:hover {
+.actions > button:focus {
 	color: white;
+	outline: none;
 }
 
-.actions > .save:hover {
+.actions > .save:focus {
 	background-color: rgb(101, 161, 204);
 }
 
-.actions > .delete:hover {
+.actions > .delete:focus {
 	background-color: rgb(242, 136, 136);
 }
 
-.actions > .edit:hover {
+.actions > .edit:focus {
 	background-color: rgb(72, 78, 82);
 }
 
-.first button:hover {
-	color: rgb(101, 161, 204)
+.first button:focus {
+	color: rgb(101, 161, 204);
+	outline: none;
 }
 
 .done::after {
@@ -125,7 +127,7 @@ label, .first button {
 
 
 /********************************
-	MEDIA-QUERRY --> ABOVE 750PX
+    MEDIA-QUERRY --> ABOVE 750PX
   *********************************/
 
 
@@ -175,7 +177,7 @@ label, .first button {
 	}
 
 	/******************
-		PSUEDO-CLASSES
+	    PSUEDO-CLASSES
 	  *******************/
 	
 	.actions > .button:hover {
@@ -198,7 +200,7 @@ label, .first button {
 
 
 /******************
-	 COLORS
+       COLORS
   *******************/
 
 body {	
