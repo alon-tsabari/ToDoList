@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>To Do List || Alon Tsabari</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style2.css">
+	</head>
+
+	<body ng-app="toDoList">
+		<div class="wrapper">
+			<h1>My TODOs!</h1>
+
+			<div class="toDoList" ng-controller="mainCtrl">
+				
+				<ul class="first">
+					<li>
+						<button ng-click="addTask()">Add a new Task +</button>
+					</li>
+				</ul>
+
+				<ul>
+					<li ng-repeat="todo in todos" ng-class="{'none': deleted}">
+						<input type="checkbox" ng-click="done = !done" >
+						<label ng-hide="editing" ng-class="{'done': done}">{{todo.name}}</label>
+						<input type="text" ng-show="editing" ng-model="todo.name" ng-blur="editing = false;">
+						
+						<div class="actions">
+							<button class="edit" ng-click="editing = true;">Edit</button>
+							<button class="save" ng-click="editing = false;">Save</button>
+							<button class="delete" ng-click="deleted = true;">Delete</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+				
+		</div>
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular.js"></script>
+	</body>
+</html>
