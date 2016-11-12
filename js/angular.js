@@ -5,7 +5,7 @@ angular.module('toDoList', [])
   $scope.addTask = function() {
 	var input = document.querySelector('[type="text"]');
 	if(input.value === '') {
-	  $scope.todos.push({"name": "New Task"});
+	  $scope.todos.unshift({"name": "New Task"});
 	  console.log(this);
 	}else {
 	  $scope.todos.push({"name": $scope.todo.name});
