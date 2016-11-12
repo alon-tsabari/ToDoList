@@ -27,11 +27,5 @@ var app = angular.module('toDoList', [])
 		$http.get('js/data.json').then(callback);
 	};
 	
-	this.deleteTodo = function(todo) {
-		console.log('Todo' + todo.name + ' has been deleted!');
-	};
 	
-	this.saveTodo = function(todo) {
-		console.log('Todo' + todo.name + ' has been saved!');
-	}
 });
