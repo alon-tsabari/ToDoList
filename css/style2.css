@@ -113,7 +113,7 @@ label, .first button {
 	background-color: rgb(72, 78, 82);
 }
 
-.first button:focus {
+.first button:hover {
 	color: rgb(101, 161, 204);
 	outline: none;
 }
@@ -199,10 +199,6 @@ label, .first button {
 		color: rgb(242, 136, 136);
 	}
 	
-	.first button:hover {
-		color: rgb(101, 161, 204);
-		outline: none;
-	}
 }
 
 
