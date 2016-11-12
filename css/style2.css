@@ -176,24 +176,26 @@ label, .first button {
 	.actions > .save {
 		margin: 0 10px;
 	}
+	
 
 	/******************
 	    PSUEDO-CLASSES
 	  *******************/
-	
-	.actions > .button:hover {
+	  
+
+	.actions > .button:hover, .actions > .button:focus {
 		background-color: transparent;
 	}
 
-	.actions > .edit:hover {
+	.actions > .edit:hover, .actions > .edit:focus {
 		color: rgb(102, 108, 102);
 	}
 
-	.actions > .save:hover {
+	.actions > .save:hover, .actions > .save:focus {
 		color: rgb(101, 161, 204);
 	}
 
-	.actions > .delete:hover {
+	.actions > .delete:hover, .actions > .delete:focus {
 		color: rgb(242, 136, 136);
 	}
 	
@@ -202,7 +204,6 @@ label, .first button {
 		outline: none;
 	}
 }
-
 
 
 /******************
