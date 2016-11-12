@@ -1,9 +1,9 @@
 [
-	{'name': 'Learn Angular'},
-	{'name': 'Clean'},
-	{'name': 'Go to work'},
-	{'name': 'Excercise'},
-	{'name': 'Run'},
-	{'name': 'Work out'},
-	{'name': 'Go to school'}
+	{"name": "Learn Angular"},
+	{"name": "Clean"},
+	{"name": "Go to work"},
+	{"name": "Excercise"},
+	{"name": "Run"},
+	{"name": "Work out"},
+	{"name": "Go to school"}
 ]
