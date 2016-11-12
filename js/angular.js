@@ -8,13 +8,13 @@ var app = angular.module('toDoList', [])
 
 	dataService.getTodos(function(response) {
 		console.log(response.data);
-		return response.data;
+		$scope.todos = response.data;
 	});
 })
 
 .service('dataService', function($http) {
 	
-	this.getTodos = fucntion(callback) {
+	this.getTodos = function(callback) {
 		$http.get('js/data.json').then(callback);
 	};
 });
