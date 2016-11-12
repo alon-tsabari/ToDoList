@@ -28,11 +28,11 @@ var app = angular.module('toDoList', [])
 	};
 	
 	this.deleteTodo = function(todo) {
-		console.log('The ToDo ' + this.todo.name + ' has been deleted successfully!');
+		console.log('The ToDo - ' + todo.name + ' has been deleted successfully!');
 	}
 			    
 	this.saveTodo = function(todo) {
-		console.log('The ToDo ' + todo.name + ' has been saved successfully!');
+		console.log('The ToDo - ' + todo.name + ' has been saved successfully!');
 	}
 	
 });
